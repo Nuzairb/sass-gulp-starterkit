@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Nuzairb/sass-gulp-starterkit/issues"
   },
-  "homepage": "https://github.com/Nuzairb/sass-gulp-starterkit#readme"
+  "homepage": "https://github.com/Nuzairb/sass-gulp-starterkit#readme",
+  "devDependencies": {
+    "gulp-sass": "^4.0.2"
+  }
 }
