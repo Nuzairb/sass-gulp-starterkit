@@ -1,29 +1,41 @@
 {
-  "name": "sass-gulp-starterkit",
-  "version": "1.0.0",
-  "description": "This is a starterkit for my projects",
-  "main": "index.js",
-  "dependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglifycss": "^1.1.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nuzairb/sass-gulp-starterkit.git"
-  },
-  "author": "Nuzair",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nuzairb/sass-gulp-starterkit/issues"
-  },
-  "homepage": "https://github.com/Nuzairb/sass-gulp-starterkit#readme"
+    "name": "sass-gulp-starterkit",
+    "version": "1.0.0",
+    "description": "Using Gulp.js for CSS tasks",
+    "main": "index.js",
+    "scripts": {
+        "build": "gulp css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nuzairb/sass-gulp-starterkit.git"
+    },
+    "keywords": [
+        "gulp",
+        "css"
+    ],
+    "author": "Nuzair Ibrahim",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Nuzairb/sass-gulp-starterkit/issues"
+    },
+    "homepage": "https://github.com/Nuzairb/sass-gulp-starterkit#readme",
+    "dependencies": {
+        "autoprefixer": "8.6.4",
+        "cssnano": "3.10.0",
+        "gulp": "3.9.1",
+        "gulp-imagemin": "4.1.0",
+        "gulp-newer": "1.4.0",
+        "gulp-noop": "1.0.0",
+        "gulp-postcss": "7.0.1",
+        "gulp-sass": "4.0.1",
+        "gulp-size": "3.0.0",
+        "gulp-sourcemaps": "2.6.4",
+        "postcss-assets": "5.0.0",
+        "usedcss": "1.0.7"
+    },
+    "devDependencies": {
+        "browser-sync": "2.24.5"
+    }
 }
