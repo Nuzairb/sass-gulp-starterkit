@@ -9,6 +9,7 @@ gulp.task('style', function() {
     gulp.src(styleSRC)
         .pipe(sass({
             errorLogToConsole: true,
+            outputStyle: 'compressed'
         }))
         .on('error', console.error.bind(console))
         .pipe(rename({ suffix: '.min' }))
