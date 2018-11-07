@@ -1,11 +1,11 @@
 var gulp = require('gulp');
 var rename = require('gulp-rename');
 
-var styleSRC = './src/scss/style.css';
+var styleSRC = './src/scss/style.scss';
 var styleDIST = './dist/css/';
 
 gulp.task('style', function() {
-  gulp.src( styleSRC )
-    .pipe( rename( {suffix: '.min'} ) )
-    .pipe( gulp.dest( styleDIST ) );
+    gulp.src(styleSRC)
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest(styleDIST));
 });
