@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Nuzairb/sass-gulp-starterkit#readme",
   "devDependencies": {
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
