@@ -4,10 +4,10 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 
-var styleSRC = './src/scss/style.scss';
+var styleSRC = './src/scss/*.scss';
 var styleDIST = './dist/css/';
 
-var jsSRC = './src/js/script.js';
+var jsSRC = './src/js/*.js';
 var jsDIST = './dist/js/';
 
 gulp.task('style', function() {
@@ -30,6 +30,10 @@ gulp.task('style', function() {
 
 gulp.task('js', function() {
     gulp.src(jsSRC)
+        .pipe(concat('build.js'))
+        .pipe(gulp.dest(jsDIST))
+        .pipe(rename('build.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest(jsDIST));
 });
 
